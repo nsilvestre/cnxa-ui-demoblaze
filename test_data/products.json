@@ -1,0 +1,11 @@
+{
+  "phones": [
+    { "name": "Samsung galaxy s6" }
+  ],
+  "laptops": [
+    { "name": "Sony vaio i7" }
+  ],
+  "monitors": [
+    { "name": "Apple monitor 24" }
+  ]
+}
