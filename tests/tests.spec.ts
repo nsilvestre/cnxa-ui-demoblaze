@@ -1,8 +1,8 @@
 import {test, expect} from "@playwright/test";
 import { PageManager } from "../pages/pageManager";
+import { faker } from "@faker-js/faker";
 import products from "../test_data/products.json";
 
-const {faker} = require('@faker-js/faker');
 const LAPTOP_NAME = products.laptops[0].name 
 
 test.beforeEach(async ({page}) => {
@@ -41,7 +41,7 @@ test('Complete purchase', async ({page}) => {
     const country = faker.location.country();
     const city = faker.location.city();
     const card = faker.finance.creditCardNumber();
-    const month = faker.date.month({context: 'long'});
+    const month = faker.date.month();
     const year = faker.date.past().getFullYear().toString();
 
     await pm.onHomePage().goToLaptopsCategory();
