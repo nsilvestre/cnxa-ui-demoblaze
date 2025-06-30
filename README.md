@@ -44,10 +44,24 @@ This project automates three main user flows on the Demoblaze website using Play
    ```
 
 ### Running the Tests
-To run all tests in Chromium and headed mode:
-```sh
-npx playwright test --project=chromium --headed
-```
+You can run the tests for each flow or the entire suite using the following npm scripts:
+
+- **Run all tests (Chromium, headed):**
+  ```sh
+  npm run test:all:chrome
+  ```
+- **Run only the Sign Up flow:**
+  ```sh
+  npm run test:flow1:signUp
+  ```
+- **Run only the Add Element to Cart flow:**
+  ```sh
+  npm run test:flow2:addElementToCart
+  ```
+- **Run only the Complete Purchase flow:**
+  ```sh
+  npm run test:flow3:completePurchase
+  ```
 
 To view the test report after running tests:
 ```sh
