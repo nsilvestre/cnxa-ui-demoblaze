@@ -6,7 +6,7 @@ import products from "../test_data/products.json";
 const LAPTOP_NAME = products.laptops[0].name 
 
 test.beforeEach(async ({page}) => {
-    await page.goto('https://www.demoblaze.com/index.html');
+    await page.goto('/');
 });
 
 test('Sign up', async ({page}) => {
