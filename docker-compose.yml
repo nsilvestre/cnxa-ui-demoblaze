@@ -1,0 +1,11 @@
+version: '2.38'
+services:
+  playwright-test:
+    image: pw-demoblaze-image
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    command: npx playwright test --project=chromium
+    volumes:
+      - ./playwright-report/:/demoblaze/playwright-report
+      - ./test-results/:/demoblaze/test-results
