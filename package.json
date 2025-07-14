@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-     "test:all:chrome": "npx playwright test --headed --project=chromium",
+     "test:all:chrome": "npx playwright test --project=chromium",
      "test:flow1:signUp": "npx playwright test -g 'Sign up' --headed --project=chromium",
      "test:flow2:addElementToCart": "npx playwright test -g 'Add element to cart' --headed --project=chromium",
      "test:flow3:completePurchase": "npx playwright test -g 'Complete purchase' --headed --project=chromium"
